@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculdade Tech</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+<!-- CSS Bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+<!--Datatables-->
+<link href="https://cdn.datatables.net/2.3.7/css/dataTables.bootstrap5.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Faculdade Tech</h1>
+        <p>Construindo o Futuro com Tecnologia e Inovação</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </nav>
+    <main>
+        <div class="container mt-5">
+            <h2>Lista de cursos</h2>
+
+            <table id="tabela-curso" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Cursos</th>
+                        <th>Período</th>
+                        <th>Semestres</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ciência da Computação</td>
+                        <td>Noturno</td>
+                        <td>8 semestres</td>
+                    </tr>
+                    <tr>
+                        <td>Medicina</td>
+                        <td>Integral</td>
+                        <td>30 semestres</td>
+                    </tr>
+                    <tr>
+                        <td>Educação Física</td>
+                        <td>Diurno</td>
+                        <td>6 semestres</td>
+                    </tr>
+                    <tr>
+                        <td>Administração</td>
+                        <td>Noturno</td>
+                        <td>8 semestres</td>
+                    </tr>
+                    <tr>
+                        <td>Engenharia</td>
+                        <td>Noturno</td>
+                        <td>10 semestres</td>
+                    </tr>
+                    <tr>
+                        <td>Veterinára</td>
+                        <td>Diurno</td>
+                        <td>10 semestres</td>
+                    </tr>
+                    <tr>
+                        <td>ADS</td>
+                        <td>Integral</td>
+                        <td>6 semestres</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Faculdade Tech 2026 - Todos os direitos reservados</p>
+    </footer>
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.datatables.net/2.3.7/js/dataTables.js"></script>
+<script src="https://cdn.datatables.net/2.3.7/js/dataTables.bootstrap5.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $("#tabela-curso").DataTable({
+            "pageLength": 3
+        })
+    })
+</script>
+</body>
+</html>
