@@ -1,9 +1,6 @@
 name: primeiro-workflow #nome tecnico
 run-name: Meu primeiro workflow #nome mais humanizado
 
-on: [push] # qualquer branch quando rodar, vai rodar nos pipelines (CD -main)
-
-#event apenas na branch main
 on: 
     push:
         branches:
