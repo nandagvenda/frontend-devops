@@ -12,6 +12,11 @@ jobs:
         steps:
             - name: Rodar um hello no mac
               run: echo "Rodou no mac"
+    linux:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Rodar um hello no linux
+              run: echo "Rodou no linux tambem"
 
 
 
